@@ -1,6 +1,4 @@
 body{
-    
-  
 
     overflow: scroll;
     padding: 10px;
@@ -37,6 +35,7 @@ body{
 }
 
 .col {
+
     display: flex; 
     justify-content: center;
 }
@@ -60,4 +59,19 @@ body{
      width: 100%;
      border: 2px solid rgb(0, 0, 0);
 
+}
+.alert{
+    text-align: center;
+    font-size: 25px;
+    
+}
+#badge{
+    margin-left: 135px;
+    margin-bottom: 01px;
+}
+#backSideThankyou{
+    background-color: rgb(234, 234, 108);
+} 
+#nextpageIcon{
+    align-items: center;
 }

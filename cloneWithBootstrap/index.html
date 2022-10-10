@@ -20,14 +20,17 @@
   </head>
   <body >
 
-
+<!-- alert bar -->
+    <div class="alert alert-success" role="alert">
+       !!! Welcome !!!
+    </div>
 
     <!-- nav Bar -->
     <nav
       class="navbar navbar-expand-lg"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">CloneWeb_logo</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -55,20 +58,18 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Feedback
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#contactusModal">Contact us</a></li>
+                <!-- <li><a class="dropdown-item" href="#">send mail</a></li> -->
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mailModal">Send Mail</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
+           
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -90,8 +91,93 @@
       </div>
     </nav>
 
+<!-- contact us Modal -->
+  <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Contact with Team </h1>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
 
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Contact No</label>
+                  <h3>+91 9876543210</h3>
+                  <div id="emailHelp" class="form-text">We'll never share your mobile no with anyone else.</div>
+                </div>
+              </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#thankyouModal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
   
+  <!-- Mail Modal -->
+  <div class="modal fade" id="mailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Contact with team by mail-id</h1>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <h2>clonewebsite@gmail.com </h2>
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                
+              </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#thankyouModal" >Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Thank you modal -->
+<div class="modal fade" id="thankyouModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Thank You...</h1>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="backSideThankyou">
+
+          <form>
+              <div class="mb-3" >
+                <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+                <h2>Thank uh for ur response</h2>
+                <div id="emailHelp" class="form-text">Thank you so much for your amazing review! thank you for taking time out of your day to leave us this super kind review.</div>
+              </div>
+              
+            </form>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal" >Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
   <!-- login Modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -257,7 +343,7 @@
               <div class="card h-100" >
                 <img src="vegFood.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Veg Food</h5>
+                  <h5 class="card-title">Veg Dishes </h5>
                   <p class="card-text">Vegetarian diets offer a number of nutritional benefits, including lower levels of saturated fat, cholesterol and animal protein as well as higher levels of carbohydrates, dietary fiber, magnesium, potassium, folate and antioxidants such as vitamins C and E and phytochemicals.</p>
                 </div>
                 <div class="card-footer">
@@ -270,7 +356,7 @@
               <div class="card h-100" >
                 <img src="nonVegPhoto.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Non-Veg</h5>
+                  <h5 class="card-title">Non-Veg Dishes</h5>
                   <p class="card-text">A non-vegetarian diet includes chicken, meat, eggs and fish. A non-vegetarian diet also has several health benefits because this type of food is rich in protein and vitamin B.</p>
                 </div>
                 <div class="card-footer">
@@ -283,7 +369,7 @@
               <div class="card h-100" >
                 <img src="sweet.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Sweet Dish</h5>
+                  <h5 class="card-title">Sweet Dishes </h5>
                   <p class="card-text">The correct number of sweets can help to fuel your mind and body. Some sweets also contain all the necessary fibers, antioxidants, and vitamins for the diet.</p>
                 </div>
                 <div class="card-footer">
@@ -294,6 +380,8 @@
           </div>
     </div>
     </div>
+<span class="placeholder col-12 bg-secondary"></span>
+
    
 <!-- foooter -->
 <div class="card text-center">
@@ -311,10 +399,35 @@
   <div class="card-body">
     <h5 class="card-title">Award's</h5>
     <p class="card-text">we got tasty online food website aword</p>
-    <a href="#" class="btn btn-primary">Go to Award</a>
+    
+    <h6 id="badge"> <span class="badge bg-success">New</span></h6>
+    <a href="https://github.com/Coder-SagarThakare/cloneWebsite" class="btn btn-primary">Get Code on GIthub</a>
+
   </div>
 </div>
  
+
+<!-- next page icon -->
+<nav aria-label="Page navigation example" id="nextpageIcon">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<span class="placeholder col-12 bg-secondary"></span>
+
   </body>
 </html>
 <button
